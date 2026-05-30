@@ -1,0 +1,93 @@
+/* CSS Reset */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Navigation bar */
+#navbar {
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: pink;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: logo and image */
+#logo {
+    margin: 1px 0px;
+}
+
+#logo img {
+    height: 69px;
+    margin: 1px 1px;
+}
+
+/* navigation Bar: list styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background:url(bg1.jpg) center center/cover no-repeat; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.77;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-size: 2.3rem;
+}
+/* Utility class */
+.h-primary{
+    font-size: 3.4rem;
+    padding: 12px;
+}
+.btn{
+    padding: 2px 20px;
+    background-color: palevioletred;
+    font-size: 1.2rem;
+    margin: 17px;
+}
