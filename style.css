@@ -5,23 +5,24 @@
 }
 
 /* Navigation bar */
-#navbar {
-    position: relative;
-}
 
 #navbar {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 0px;
 }
 
 #navbar::before {
     content: "";
-    background-color: pink;
+    background-color: palevioletred;
     position: absolute;
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 /* Navigation Bar: logo and image */
@@ -49,6 +50,7 @@
     padding: 2px 30px;
     border-radius: 25px;
     text-decoration: none;
+    color: white;
 }
 
 #navbar ul li a:hover {
@@ -60,34 +62,101 @@
 #home {
     display: flex;
     flex-direction: column;
-    padding: 2px 200px;
-    height: 400px;
+    padding: 3px 200px;
+    height: 606px;
     justify-content: center;
     align-items: center;
 }
 
 #home::before {
     content: "";
-    background:url(bg1.jpg) center center/cover no-repeat; 
+    background-image: url(images/bg15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    height: 100%;
+    height: 630px;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    opacity: 0.77;
+    opacity: 0.99;
 }
-#home h1{
-    color:black;
+
+#home h1 {
+    color: white;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 3.4rem;
+    font-family: 'Times New Roman', Times, serif
 }
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Category Section */
+#categories {
+    margin: 34px;
+    display: flex;
+}
+
+#categories .box {
+    border: solid 2px palevioletred;
+    padding: 34px;
+    margin: 2px 25px;
+    border-radius: 28px;
+    background-color: rgb(242, 233, 236);
+    margin-bottom: 20px;
+}
+
+#categories .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+#categories .box p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* About Section */
+#about-section{
+    height: 100%;
+    background-color: rgb(254, 206, 222);
+    margin: 3px 6px;
+    width: 100%;
+    padding: 0px 45px;
+    }
+
+#about-us .about p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /* Utility class */
-.h-primary{
+.h-primary {
     font-size: 3.4rem;
     padding: 12px;
 }
-.btn{
-    padding: 2px 20px;
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 30px;
     background-color: palevioletred;
+    color: white;
     font-size: 1.2rem;
     margin: 17px;
+    border-radius: 17px;
+    cursor: pointer;
 }
