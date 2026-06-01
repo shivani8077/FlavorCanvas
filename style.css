@@ -43,6 +43,7 @@
 #navbar ul li {
     list-style: none;
     font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #navbar ul li a {
@@ -55,7 +56,7 @@
 
 #navbar ul li a:hover {
     color: black;
-    background-color: white;
+    background-color: palevioletred;
 }
 
 /* Home Section */
@@ -84,7 +85,7 @@
 }
 
 #home h1 {
-    color: white;
+    color: palevioletred;
     text-align: center;
     font-size: 3.4rem;
     font-family: 'Times New Roman', Times, serif
@@ -116,24 +117,125 @@
     height: 160px;
     display: block;
     margin: auto;
-
 }
 
 #categories .box p {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }
 
 /* About Section */
-#about-section{
-    height: 100%;
-    background-color: rgb(254, 206, 222);
-    margin: 3px 6px;
-    width: 100%;
-    padding: 0px 45px;
-    }
 
-#about-us .about p {
+#about-section {
+    display: flex;
+    margin: 23px;
+}
+
+#about-section::before {
+    content: "";
+    /* background-color: palevioletred; */
+    position: absolute;
+    background-image: url(images/10.jpg);
+    height: 278px;
+    width: 98%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#abt {
+    display: flex;
+}
+
+#about-section .about img {
+    height: 225px;
+    width: 229px;
+    margin: 27px 103px;
+}
+
+#about-section .about h2 p {
     font-family: 'Times New Roman', Times, serif;
+}
+
+#about-section .about p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+/* Why Choose Section */
+#why-choose {
+    margin: 34px;
+    /* display: flex; */
+}
+
+#why-choose p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+#choose-card {
+    display: flex;
+    gap: 67px;
+    margin: 34px;
+    height: 374px;
+}
+
+.card {
+    border: solid 2px palevioletred;
+    background-color: rgb(253, 199, 217);
+    justify-content: baseline;
+    width: 35%;
+    margin: 12px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 19px 16px;
+}
+
+.container p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+.container h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+
+/* Newsletter and Contact Section */
+#n-c-section {
+    margin: 34px;
+}
+
+#n-c-section {
+    content: "";
+    /* background-color: #FFF8F5 (Floral White); */
+    position: absolute;
+    /* background-image: url(images/10.jpg); */
+    height: 278px;
+    width: 95%;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+
+#n-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    margin: 3px;
+    padding:1px 2px;
+}
+
+/* newsletter-section */
+#newsletter-section{
+    padding: 23px;
 }
 
 /* Utility class */
@@ -144,6 +246,11 @@
 
 .h-secondary {
     font-size: 2rem;
+    padding: 12px;
+}
+
+.h-tertiary {
+    font-size: 1.5rem;
     padding: 12px;
 }
 
@@ -159,4 +266,5 @@
     margin: 17px;
     border-radius: 17px;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
