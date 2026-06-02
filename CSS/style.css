@@ -71,7 +71,7 @@
 
 #home::before {
     content: "";
-    background-image: url(images/bg15.jpg);
+    background-image: url(../images/bg15.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,7 +135,7 @@
     content: "";
     /* background-color: palevioletred; */
     position: absolute;
-    background-image: url(images/10.jpg);
+    background-image: url(../images/10.jpg);
     height: 278px;
     width: 98%;
     z-index: -1;
@@ -186,6 +186,7 @@
     justify-content: baseline;
     width: 35%;
     margin: 12px;
+    border-radius: 17px;
 
 }
 
@@ -210,33 +211,71 @@
 /* Newsletter and Contact Section */
 #n-c-section {
     margin: 34px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }
 
-#n-c-section {
-    content: "";
-    /* background-color: #FFF8F5 (Floral White); */
-    position: absolute;
-    /* background-image: url(images/10.jpg); */
-    height: 278px;
-    width: 95%;
-    z-index: -1;
-    /* opacity: 0.4; */
-}
 
 #n-c {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    align-items: center;
-    margin: 3px;
-    padding:1px 2px;
+    margin: 3px 60px;
+    background-color: mistyrose;
 }
 
 /* newsletter-section */
-#newsletter-section{
+#newsletter-section {
     padding: 23px;
 }
+
+/* Contact section */
+#contact-section {
+    padding: 23px;
+}
+
+#contact-section form {
+    padding: 23px;
+}
+
+#contact-section form textarea {
+    border-radius: 17px;
+    border: solid 1px palevioletred;
+}
+
+/* Footer-section */
+#footer-section{
+    /* margin: 34px; */
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#footer-section h3{
+    font-size: medium;
+    padding: 17px;
+}
+#footer-section p{
+    font-size: medium;
+    padding: 17px;
+}
+#footer-section .copyright p{
+text-align: center;
+font-size: small;
+}
+
+#footer-mid{
+    display:flex;
+    margin: 34px;
+    gap:30%;
+    align-items: center;
+    text-align: center;
+ 
+}
+#footer-mid a{
+    text-decoration: none;
+    color:white;
+}
+
 
 /* Utility class */
 .h-primary {
@@ -267,4 +306,19 @@
     border-radius: 17px;
     cursor: pointer;
     font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    padding: 3px 30px;
+    border: solid palevioletred 1px;
+    color: black;
+    font-size: 1.2rem;
+    margin: 11px;
+    border-radius: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }

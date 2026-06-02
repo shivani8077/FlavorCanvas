@@ -1,0 +1,18 @@
+#home{
+
+}
+
+#categories{
+    flex-direction: column;
+}
+
+#abt{
+    flex-direction: column;
+    overflow: hidden;
+}
+#choose-card{
+    flex-direction: column;
+}
+#n-c{
+    flex-direction: column;
+}

@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
         content="TastyBites by Sadhvi is your destination for delicious homemade recipes, quick snacks, refreshing beverages, desserts, and food inspiration. Explore easy-to-follow recipes, cooking tips, and flavorful dishes crafted with love.">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="CSS/phone.css">
+
+    <script src="script.js"></script>
 
     <title>TastyBites by Sadhvi | Homemade Recipes & Food Inspiration</title>
 
@@ -128,18 +129,84 @@
             <div id="contact-section" class="contact">
                 <h3 class="h-tertiary">Let's Connect</h3>
                 <p>Have a question, recipe request, feedback, or collaboration idea?</p>
-                <br>
                 <p>I'd love to hear from you!</p>
                 <div>
-                    <label for="email">Email: </label>
+                    <!-- <label for="email">Email: </label> -->
+                    <img src="images/communication.png" alt="email">
                     <a href="mailto:shivi00singh25@gmail.com">shivi00singh25@gmail.com</a>
                 </div>
                 <br>
                 <div>
-                    <label for="instagram">instagram: </label>
+                    <!-- <label for="instagram">Instagram: </label> -->
+                    <img src="images/instagram.png" alt="instagram">
                     <a href="https://www.instagram.com/tastybites_sadhvi/">@tastybites_sadhvi</a>
                 </div>
+                <!-- <div class="msg-form"> -->
+                <form action="backend.php">
+                    <div>
+                        <label for="name">Name : </label>
+                        <input type="text" name="myname" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email : </label>
+                        <input type="email" name="myemail" id="email">
+                    </div>
+                    <label for="meg">Message : </label>
+                    <textarea name="mytext" id="" cols="50" rows="4"></textarea>
+                    <div>
+                        <button class="btn" type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
+        </div>
+    </section>
+    <section id="footer-section">
+        <div id="footer" class="brand-info">
+            <h2 class="h-secondary">TastyBites by Sadhvi</h2>
+            <p>Bringing delicious recipes, vibrant flavors, and homemade goodness to every table.</p>
+        </div>
+        <div id="footer-mid">
+            <div id="quick-links">
+                <h3 class="h-tertiary">Quick Links</h3>
+                <div><a href="#">Home</a></div>
+                <div><a href="#">Recipes</a></div>
+                <div><a href="#">Reels</a></div>
+                <div><a href="#">About</a></div>
+                <div><a href="#">Contact</a></div>
+
+            </div>
+            <div id="cate">
+                <h3 class="h-tertiary">Categories</h3>
+                <div><a href="#">Quick Snacks</a></div>
+                <div><a href="#">Indian Recipes</a></div>
+                <div><a href="#">Desserts</a></div>
+                <div><a href="#">Drinks</a></div>
+                <div><a href="#">Healthy Bites</a></div>
+            </div>
+            <div id="social-links">
+                <h3 class="h-tertiary">Follow Us</h3>
+                <div><a href="https://www.instagram.com/tastybites_sadhvi/">
+                        <img src="images/instagram.png" alt="instagram">
+                    </a></div>
+                <div><a href="https://www.facebook.com">
+                        <img src="images/facebook.png" alt="facebook">
+                    </a></div>
+                <div><a href="https://www.linkedin.com">
+                        <img src="images/linkedin.png" alt="linkedin">
+                    </a>
+                </div>
+                <div><a href="mailto:shivi00singh25@gmail.com">
+                        <img src="images/communication.png" alt="email">
+                    </a></div>
+                <div><a href="https://www.youtube.com">
+                        <img src="images/youtube.png" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 TastyBites by Sadhvi. All Rights Reserved.
+                Designed & Developed by Shivani Singh Prajapati.</p>
         </div>
     </section>
 
