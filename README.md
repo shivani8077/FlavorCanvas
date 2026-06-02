@@ -18,18 +18,8 @@ A modern and aesthetic food website inspired by the Instagram page @tastybites_s
 - CSS3
 - JavaScript
 
-## Project Structure
-
-├── index.html
-├── style.css
-├── script.js
-├── images/
-└── README.md
-
 ## Live Demo
 
-Add your deployed website link here.
+https://shivani8077.github.io/FlavorCanvas/
 
-## Author
 
-Shivani Singh Prajapati
