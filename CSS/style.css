@@ -133,7 +133,6 @@
 
 #about-section::before {
     content: "";
-    /* background-color: palevioletred; */
     position: absolute;
     background-image: url(../images/10.jpg);
     height: 278px;
